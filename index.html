@@ -66,11 +66,11 @@
 
     <script>
         // 根据当前服务器地址动态生成各文件的完整 URL
-        const files = ['/jsm.json', '/sss.json'];
+        const files = ['/bbb/jsm.json', '/bbb/sss.json'];
         const list = document.getElementById('list');
 
         files.forEach(name => {
-            const url = new URL(name, window.location.href).href + '/bbb';
+            const url = new URL(name, window.location.href).href ;
 
             const row = document.createElement('div');
             row.className = 'row';
