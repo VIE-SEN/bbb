@@ -70,7 +70,7 @@
         const list = document.getElementById('list');
 
         files.forEach(name => {
-            const url = new URL(name, window.location.href).href;
+            const url = new URL(name, window.location.href).href + '/bbb';
 
             const row = document.createElement('div');
             row.className = 'row';
