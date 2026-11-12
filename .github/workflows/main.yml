@@ -1,4 +1,8 @@
 name: Update xiaosa
+
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   schedule:
