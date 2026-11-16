@@ -76,12 +76,6 @@ jobs:
           name: xiaosa-output
         continue-on-error: true
 
-      - name: Download fty artifacts
-        uses: actions/download-artifact@v8
-        with:
-          name: fty-output
-        continue-on-error: true
-
       - name: Git push assets to "release" branch
         run: |
           git config --local user.name "github-actions[bot]"
