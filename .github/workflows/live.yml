@@ -6,7 +6,7 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: "40 21 * * *"  # UTC 21:40 = 北京时间 5:40
+    - cron: "0 20 * * *"  # UTC 20:00 = 北京时间 04:00
   push:
     branches:
       - main
